@@ -20,8 +20,6 @@ class TabBarController : AppCompatActivity() {
         tabbar_container.adapter = adapter
         tabbar_container.offscreenPageLimit = adapter.count
 
-        tabbar_container.currentItem = 1
-
         tabbar_container.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
 
             override fun onPageScrollStateChanged(state: Int) {}

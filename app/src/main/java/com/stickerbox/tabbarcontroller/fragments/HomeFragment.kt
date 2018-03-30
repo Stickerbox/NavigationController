@@ -18,7 +18,7 @@ class HomeFragment : Fragment() {
     override fun onStart() {
         super.onStart()
 
-        home_layout.setOnClickListener {
+        home_button.setOnClickListener {
             navigationController?.push(HomeDetailFragment())
         }
 
