@@ -57,9 +57,9 @@ class NavigationController : Fragment() {
 
 }
 
-var Fragment.navigationController : NavigationController?
-    get() = getNavigationController(parentFragment)
-    set(value) {}
+val Fragment.navigationController : NavigationController? by lazy {
+    getNavigationController(parentFragment)
+}
 
 private fun Fragment.getNavigationController(parent: Fragment? = null) : NavigationController? {
     if (parentFragment == null) return null
